@@ -585,3 +585,17 @@ footer{
         width: 100%;
     }
 }
+
+  input, textarea {
+    background-color: var(--base-color); /* Adjust if you have a different background color */
+  }
+  
+  /* Dark mode styles */ 
+  .darkmode input, 
+  .darkmode textarea {
+    color: var(--color-white); /* Text changes to white in dark mode */
+  }
+  
+  .darkmode input, .darkmode textarea {
+    background-color: var(--base-variant); /* Adjust the background to contrast with white text */
+  }
