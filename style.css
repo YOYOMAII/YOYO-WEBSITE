@@ -14,14 +14,17 @@
 }
 
 #theme-switch{
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     padding: 0;
     border-radius: 50%;
     background-color: var(--base-variant);
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 10px; /* Adjust this value to move the button up or down */
+    right: 10px; /* Adjust this value if you want to move it left or right */
 }
 
 #theme-switch svg{
