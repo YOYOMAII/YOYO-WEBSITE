@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 /* ----- VARIABLES ----- */
 :root{
-    --body-color: rgb(250, 250, 250);
+    --body-color: rgb(255, 255, 255);
     --color-white: rgb(255, 255, 255);
     --text-color-second: rgb(68, 68, 68);
     --text-color-third: rgb(48, 28, 161);
@@ -11,6 +11,51 @@
     --second-color: rgb(43, 28, 177);
     --third-color: rgb(192, 166, 49);
     --first-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+#theme-switch{
+    height: 60px;
+    width: 60px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#theme-switch svg{
+    fill: var(--parmary-color);
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child{
+    display: block;
+}
+
+.darkmode{
+    --body-color: rgb(0, 0, 0);
+    --color-white: rgb(255, 255, 255);
+    --text-color-second: rgb(68, 68, 68);
+    --text-color-third: rgb(48, 28, 161);
+    --first-color: rgb(110, 87, 224);
+    --first-color-hover: rgb(40, 91, 212);
+    --second-color: rgb(43, 28, 177);
+    --third-color: rgb(192, 166, 49);
+    --first-shadow-color: rgba(0, 0, 0, 0.1);
+    --base-color: #070b1d;
+  --base-variant: #101425;
+  --text-color: #ffffff;
+  --secondary-text: #a4a5b8;
+  --primary-color: #3a435d;
+  --accent-color: #0071ff;
 }
 
 /* ----- BASE ----- */
@@ -219,7 +264,7 @@ nav{
     margin: auto 0;
     width: 380px;
     height: 380px;
-    border-radius: 55% 45% 55% 45%;
+
     overflow: hidden;
     animation: imgFloat 7s ease-in-out infinite;
 }
