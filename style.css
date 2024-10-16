@@ -309,8 +309,6 @@ nav{
 }
 .row{
     display: flex;
-    justify-content: center;
-    margin-left: 75px;
     width: 100%;
     gap: 70px;
 }
