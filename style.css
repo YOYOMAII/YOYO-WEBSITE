@@ -270,11 +270,11 @@ nav{
     height: 380px;
 
     overflow: hidden;
-    animation: imgFloat 7s ease-in-out infinite;
+    animation: imgFloat 15s ease-in-out infinite;
 }
 .image img{
-    width: 380px;
-    height: 380px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
 }
 @keyframes imgFloat {
